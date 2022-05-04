@@ -1,8 +1,9 @@
 ## initialize
 
-1. docker-compose run web rails new . --force --database=postgresql
-2. docker-compose build --no-cache
-3. config/database.ymlのdefaultに、username: 'admin' / password: 'admin-pass'を追加
+1. docker-compose.ymlのwebとdbのvolumesの:前の相対パスを自分のカレントディレクトリの絶対パスに変更
+2. docker-compose run web rails new . --force --database=postgresql
+3. docker-compose build --no-cache
+4. config/database.ymlのdefaultに、username: 'admin' / password: 'admin-pass'を追加
 
 ## when start
 1. docker-compose up -d
