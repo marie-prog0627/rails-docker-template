@@ -1,7 +1,7 @@
 ## initialize
 
 1. docker-compose run web rails new . --force --database=postgresql
-2. docker-compose build
+2. docker-compose build --no-cache
 3. config/database.ymlのdefaultに、username: 'admin' / password: 'admin-pass'を追加
 
 ## when start
@@ -11,3 +11,6 @@
 
 ## when close
 1. docker-compose down
+
+## when update
+1. docker-compose build
